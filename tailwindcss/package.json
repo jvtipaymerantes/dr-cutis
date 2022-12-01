@@ -1,0 +1,8 @@
+{
+
+  // npx tailwindcss -i ./styles/app.css -o ../static/css/app.css --watch
+
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
