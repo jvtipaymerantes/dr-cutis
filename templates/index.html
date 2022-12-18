@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8">
+
+<!-- disable iPhone scale -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Skin diseas detection</title>
+<!-- main css -->
+<link href="{{ url_for('static', filename='/css/style.css') }}" rel="stylesheet" type="text/css">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-gradient-to-br from-red-500 via-indigo-500 to-red-900 bg-no-repeat bg-cover">
+
+	<nav class="bg-blue-600 border-gray-200 px-2 sm:px-4 py-6 dark:bg-gray-900">
+		<div class="container flex flex-wrap pl-10">
+		  <a class="flex items-center">
+			  <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" /> -->
+			  <span class="text-3xl text-white font-extrabold">Dr Cutis</span>
+		  </a>
+		</div>
+	</nav>
+	  
+	  <section class="">
+	
+		<div class="grid pt-5 lg:grid-cols-2 gap-5"> 
+	
+			<div class="md:w-full md:relative">
+			  <div class=" lg:w-full lg:h-screen flex flex-col absolute justify-center items-start px-16">
+				<div class=" text-2xl lg:text-6xl font-bold text-white"> Skin Disease</div>
+				  <div class=" text-2xl lg:text-5xl font-bold text-white"> Consultation </div>
+				  <div class="pl-2 mt-6">
+					  <div class="text-white text-lg">
+						  Dr Cutis Skin Disease Detection is an end user support system that allows users to get guidance immediately with the help of Artificial Inteligence
+					  </div>
+					  
+				  </div>
+				  <div class="mt-4">
+					<button type="button" class="text-white bg-green-500 hover:bg-green-600 font-medium rounded-full text-lg px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-400 dark:hover:bg-green-500 dark:focus:ring-green-800" 
+					onclick="window.location.href='../templates/termscond.html';">Get Started</button>
+				  </div>
+				</div>
+			</div>
+	
+			<div class="opacity-0 lg:opacity-100 relative justify-center">
+	
+				<div class="opacity-0 top-0 left-0 ">
+					<img src="/static/css/img/bg2.png" alt="" class="h-full w-full object-contain lg:w-[500px] lg:h-[500px]">
+				</div>
+				
+				<div class="absolute -top-16 hero container max-w-screen-lg pt-40 flex flex-col">
+					<img src="/static/css/img/cutis.png" alt="" class="w-96 h-auto mx-auto">
+				</div>
+				
+			</div>
+	
+		</div>
+	
+	  </section>
+
+	
+	<!-- Footer -->
+	<footer class="relative bottom-0 bg-gray-100 text-gray-500 text-center p-4 italic">
+		Dr Cutis © 2022 All Rights Reserved
+	</footer>
+	
+
+	<!--
+	<div id="content">
+		<div id="panel1">
+			<div id="panel1-inside">
+				<div id="panel1-right">
+					<h1>Introducing , a web-based clinical reference to identify skin lesions</h1>
+					<div class="panel1-sq" id="sq3">
+						<div class="pic-icon sq-icon"></div>
+						<div class="sq-title"><a href="static/upload.html">Identify</a></div>
+					</div>
+					<div class="clearfix"></div>
+					<h2>
+						lets you search by picture. Just take a photo of a skin lesion and our app will search a proprietary image database of diagnosed lesions.
+					</h2>
+				</div>
+				<a class="pic-icon down1 nav" href="#about"></a>
+			</div>
+		</div>
+		-->
+
+</body>
+</html>

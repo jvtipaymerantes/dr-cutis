@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- main css -->
+<link href="{{ url_for('static', filename='/css/style.css') }}" rel="stylesheet" type="text/css">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-to-br from-red-500 via-indigo-500 to-red-900 bg-no-repeat bg-cover">
+
+	<nav class="bg-blue-600 border-gray-200 px-2 sm:px-4 py-6 dark:bg-gray-900">
+		<div class="container flex flex-wrap pl-10">
+		  <a class="flex items-center">
+			  <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" /> -->
+			  <span class="text-3xl text-white font-extrabold">Dr Cutis</span>
+		  </a>
+		</div>
+	</nav>
+
+	<section>
+		<div class="p-5">
+		<div class=" text-2xl lg:text-6xl font-bold text-white" class='predhead'>{{predictions}}</div>
+			<div class="text-xl font-bold text-white"> You Have: </div>
+			<div class="text-white text-lg py-4 px-14" class='predhead'>
+				Dr Cutis Skin Disease Detection detected that you have {{predictions}} for a better understanding consult to you nearist hospital to know about more.
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="p-10">
+			<button id="acc-button" type="button" class="text-gray-900 bg-white hover:bg-gray-200 font-medium rounded-lg text-base px-5 py-2.5 mr-2 mb-2">Show Accuracy</button>
+		</div>
+	</section>
+	
+	</div>
+		<center>
+		<div class="container" id="my-div" style="display: none;" class="w-auto h-auto">
+			<img src='static/data/{{img_file}}' alt='skin_disease_image' id='skin-img' class="w-auto h-auto">
+			<div>
+				<h3 class='predhead'>Disease Predicted:{{predictions}}</h3>
+				<h3 class='predhead'>Accuracy:{{acc}}</h3>
+			</div>
+	</div>
+	</center>
+
+	<script>
+		var button = document.getElementById('acc-button');
+		var div = document.getElementById('my-div');
+	  
+		button.addEventListener('click', function() {
+		  if (div.style.display === 'none') {
+			div.style.display = 'block';
+		  } else {
+			div.style.display = 'none';
+		  }
+		});
+	</script>
+
+	<!-- Footer -->
+	<footer class="relative bottom-0 bg-gray-100 text-gray-500 text-center p-4 italic">
+		Dr Cutis © 2022 All Rights Reserved
+	</footer>
+
+</body>
+</html>
+

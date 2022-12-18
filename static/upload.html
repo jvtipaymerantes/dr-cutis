@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.container{
+		margin-top:150px;
+	}
+.btn-file {
+		position: relative;
+		overflow: hidden;
+	}
+	.btn-file input[type=file] {
+		position: absolute;
+		top: 0;
+		right: 0;
+		min-width: 100%;
+		min-height: 100%;
+		font-size: 100px;
+		text-align: right;
+		filter: alpha(opacity=0);
+		opacity: 0;
+		outline: none;
+		background: white;
+		cursor: inherit;
+		display: block;
+	}
+	
+	#img-upload{
+		width: 25%;
+		display: block;
+		
+	}
+	#upload{
+		margin-top:10px;
+	}
+</style>
+<!-- main css -->
+<link href="{{ url_for('static', filename='/css/style.css') }}" rel="stylesheet" type="text/css">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<!-- media queries css -->
+<link href="css/media-queries.css" rel="stylesheet" type="text/css">
+<!-- html5.js for IE less than 9 -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src='js/upload.js'></script>
+<script  src="prefixfree/1-0-7/prefixfree.dynamic-dom.min.js"></script>
+
+</head>
+
+<body class="bg-gradient-to-br from-red-500 via-indigo-500 to-red-900 bg-no-repeat">
+
+
+	<div class="container w-auto h-auto">
+		<center>
+			<img id='img-upload'/>
+		</center>
+
+		<center>
+			<div class="col-md-6" style='margin-left:250px;'>
+				<form class="form-group" action="..\uploaded" method='post' enctype="multipart/form-data">
+					<label>Upload Image</label>
+					<div class="input-group">
+						<span class="input-group-btn">
+							<span class="btn btn-default btn-file">
+								Browse… <input type="file" id="imgInp" name="file">
+							</span>
+						</span>
+						<input type="text" class="form-control" readonly>
+							
+					</div>
+					<input type='submit' id='upload' class='btn btn-lg btn-success' value='Upload'>
+				</form>
+			</div>
+		</center>
+	</div>
+
+	<!-- Footer -->
+	<footer class="relative bottom-0 bg-gray-100 text-gray-500 text-center p-4 italic">
+		Dr Cutis © 2022 All Rights Reserved
+	</footer>
+
+</body>
+</html>
+

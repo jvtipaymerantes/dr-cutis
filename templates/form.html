@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8">
+
+<!-- disable iPhone scale -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Skin diseas detection</title>
+<!-- main css -->
+<link href="{{ url_for('static', filename='/css/style.css') }}" rel="stylesheet" type="text/css">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-gradient-to-br from-red-500 via-indigo-500 to-red-900 bg-no-repeat bg-cover">
+
+	<nav class="bg-blue-600 border-gray-200 px-2 sm:px-4 py-6 dark:bg-gray-900">
+		<div class="container flex flex-wrap pl-10">
+		  <a class="flex items-center">
+			  <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" /> -->
+			  <span class="text-3xl text-white font-extrabold">Dr Cutis</span>
+		  </a>
+		</div>
+	</nav>
+
+    <div class="text-center pt-8 pyb-4 text-4xl font-bold text-white">
+        Fill Up Form
+    </div>
+
+    <form action="" class="mx-auto place-content-center justify-center justify-items-center	content-center place-items-center items-center">
+    <div class="px-20 py-5">
+        <div class="pb-4 text-2xl font-bold text-white">
+            Gender:
+        </div>
+        <div class="flex items-center mb-4 pl-4">
+            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-radio-1" class="ml-2 text-sm  text-white dark:text-gray-300">Male</label>
+        </div>
+
+        <div class="flex items-center pl-4">
+            <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-radio-2" class="ml-2 text-sm  text-white dark:text-gray-300">Female</label>
+        </div>
+    </div>
+    </form>
+
+    <form action="" class="mx-auto place-content-center justify-center justify-items-center	content-center place-items-center items-center">
+        <div class="px-20 py-5">
+            <div class="pb-4 text-2xl font-bold text-white">
+                Age:
+            </div>
+            <div>
+                <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+            </div>
+        </div>
+    </form>
+
+    <form action="" class="mx-auto place-content-center justify-center justify-items-center	content-center place-items-center items-center">
+        <div class="px-20 py-5">
+            <div class="pb-4 text-2xl font-bold text-white">
+                Rate the Pain from 1-5:
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-1" class="ml-2 text-sm  text-white dark:text-gray-300">(1)</label>
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-2" class="ml-2 text-sm  text-white dark:text-gray-300">(2)</label>
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-1" class="ml-2 text-sm  text-white dark:text-gray-300">(3)</label>
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-2" class="ml-2 text-sm  text-white dark:text-gray-300">(4)</label>
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-2" class="ml-2 text-sm  text-white dark:text-gray-300">(5)</label>
+            </div>
+        </div>
+    </form>
+
+    <form action="" class="mx-auto place-content-center justify-center justify-items-center	content-center place-items-center items-center">
+        <div class="px-20 py-5">
+            <div class="pb-4 text-2xl font-bold text-white">
+                Does it Bleed?:
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-1" class="ml-2 text-sm  text-white dark:text-gray-300">Yes</label>
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-2" class="ml-2 text-sm  text-white dark:text-gray-300">No</label>
+            </div>
+        </div>
+    </form>
+
+    <form action="" class="mx-auto place-content-center justify-center justify-items-center	content-center place-items-center items-center">
+        <div class="px-20 py-5">
+            <div class="pb-4 text-2xl font-bold text-white">
+                Rate the Itchyness from 1-5:
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-1" class="ml-2 text-sm  text-white dark:text-gray-300">(1)</label>
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-2" class="ml-2 text-sm  text-white dark:text-gray-300">(2)</label>
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-1" class="ml-2 text-sm  text-white dark:text-gray-300">(3)</label>
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-2" class="ml-2 text-sm  text-white dark:text-gray-300">(4)</label>
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-2" class="ml-2 text-sm  text-white dark:text-gray-300">(5)</label>
+            </div>
+        </div>
+    </form>
+
+    <form action="" class="mx-auto place-content-center justify-center justify-items-center	content-center place-items-center items-center">
+        <div class="px-20 py-5">
+            <div class="pb-4 text-2xl font-bold text-white">
+                Rate the Spread of the Lesion from 1-5:
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-1" class="ml-2 text-sm  text-white dark:text-gray-300">(1)</label>
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-2" class="ml-2 text-sm  text-white dark:text-gray-300">(2)</label>
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-1" class="ml-2 text-sm  text-white dark:text-gray-300">(3)</label>
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-2" class="ml-2 text-sm  text-white dark:text-gray-300">(4)</label>
+            </div>
+            <div class="flex items-center py-1 pl-4">
+                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-radio-2" class="ml-2 text-sm  text-white dark:text-gray-300">(5)</label>
+            </div>
+        </div>
+    </form>
+
+    <div class="px-14 md:px-20 pb-6 pt-4 mx-auto place-content-center justify-center justify-items-center content-center place-items-center items-center">
+        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-base px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" onclick="window.location.href='../static/upload.html';">Continue</button>
+    </div>
+	
+	<!-- Footer -->
+	<footer class="relative bottom-0 bg-gray-100 text-gray-500 text-center p-4 italic">
+		Dr Cutis © 2022 All Rights Reserved
+	</footer>
+	
+</body>
+</html>

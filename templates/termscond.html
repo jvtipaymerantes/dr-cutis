@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8">
+
+<!-- disable iPhone scale -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Skin diseas detection</title>
+<!-- main css -->
+<link href="{{ url_for('static', filename='/css/style.css') }}" rel="stylesheet" type="text/css">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <nav class="bg-blue-600 border-gray-200 px-2 sm:px-4 py-6 dark:bg-gray-900">
+		<div class="container flex flex-wrap pl-10">
+		  <a class="flex items-center">
+			  <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" /> -->
+			  <span class="text-3xl text-white font-extrabold">Dr Cutis</span>
+		  </a>
+		</div>
+	</nav>
+    
+  <section class="bg-gray-200">
+    <div class="font-bold text-3xl p-10 text-partTimeGreen">
+      Terms and condition
+      
+    </div>
+    <div class="px-14 md:px-28 text-partTimeGreen text-justify">
+      Greetings from Dr. Cutis! You accept that you have read, comprehended, and agree to be bound by our Terms and Conditions by using our website 
+      and/or the offered services. All connected applications, online services, and website additions are unconditionally included and subject to 
+      these Terms and Conditions. You are not allowed to use this website and may stop using it right away if you disagree with all of these Terms 
+      and Conditions. You should print or save a copy of these Terms and Conditions for your records, advises Dr. Cutis.
+    </div>
+    <div class="px-14 md:px-28 py-4 text-partTimeGreen text-justify">
+      This Agreement's Dr. Cutis Terms And Conditions (these "Terms" or these "Terms and Conditions") will control how you use this website and 
+      everything on it (collectively referred to herein as this "Website"). The guidelines for using Dr. Cutis are described in these Terms. These 
+      Terms and Conditions shall govern the use of all materials, information, documents, services, and other items (collectively referred to as 
+      content) that appear on the Dr. Cutis. Your use of this website is subject to the full force and effect of these terms and conditions, and you
+       hereby expressly agree to be bound by all such terms and conditions in full. Do not continue to use this Website if you have any objection 
+       to any of the Terms and Conditions stated on this page.
+    </div>
+    <div class="px-14 md:px-28 py-4 text-partTimeGreen text-justify">
+      Dr. Cutis and/or its licensors own and retain all of the intellectual property rights to this Website, with the exception of any content you 
+      own that you have chosen to include on the Website. For the purpose of viewing the content on this Website, you are given a constrained 
+      license that is subject to the limitations set forth in these Terms and Conditions.
+    </div>
+    <div class="px-14 md:px-28 py-4 text-partTimeGreen text-justify">
+      The information on this website is not intended for use or dissemination to any person or business in any country or state, or in any region 
+      where doing so would be illegal or subject Dr. Cutis to legal action, registration requirements, charges, liabilities, damages, or other 
+      expenses. Users must be at least 18 years old to use the website. Without the approval or cooperation of your parents, you are not permitted 
+      to use or register for this Website's services if you are under the age of 18. You have the required legal capacity to abide by and be bound 
+      by these Terms and Conditions if you agree to them. <br>
+      You are only permitted to use this website in accordance with these terms and conditions, and you must only use it for the purposes for which 
+      Dr. Cutis has made the website and its services available.
+    </div>
+  </section>
+
+  <section class="bg-gray-200">
+
+    <div class="flex items-center px-14 md:px-28 py-6">
+      <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+      <label for="link-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline">terms and conditions</a>.</label>
+    </div>
+
+    <div class="px-14 md:px-28 pb-10">
+      <button id="submit-button" style="display:none;" type="button" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-base px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" onclick="window.location.href='../templates/form.html';">Continue</button>
+    </div>
+
+    <script>
+      var checkbox = document.getElementById('link-checkbox');
+      var button = document.getElementById('submit-button');
+
+      checkbox.addEventListener('change', function() {
+        if (checkbox.checked) {
+          button.style.display = 'inline-block';
+        } else {
+          button.style.display = 'none';
+        }
+      });
+    </script>
+
+  </section>
+      
+    
+    <!-- Footer -->
+    <footer class="relative bottom-0 bg-gray-100 text-gray-500 text-center p-4 italic">
+        Dr Cutis © 2022 All Rights Reserved
+    </footer>
+
+</body>
+</html>
